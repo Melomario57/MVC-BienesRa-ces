@@ -1,0 +1,23 @@
+
+
+.seccion {
+    margin-top: calc($separacion / 2);
+    margin-bottom: calc($separacion / 2);
+}
+.contenido-centrado {
+    max-width: 80rem;
+              word-break: break-all; /* Es para que los textos largos no se salgan del contenedor */
+  display: -webkit-box; /* Es para que el texto se muestre en varias lineas */
+  -webkit-line-clamp: 3; /* Cantidad de lineas que se mostraran */
+  -webkit-box-orient: vertical; /* Es la posicion del texto */
+  overflow: hidden; /* Es para que se oculte el texto que se sale del contenedor */
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.w-100{
+    width: 100%;
+}

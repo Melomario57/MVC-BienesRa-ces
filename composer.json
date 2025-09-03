@@ -1,0 +1,21 @@
+{
+  "name": "hp/bienesraicesinicio",
+  "description": "Proyecto MVC",
+  "authors": [
+    {
+      "name": "Melomario57",
+      "email": "melomario57@gmail.com"
+    }
+  ],
+  "require": {
+    "intervention/image": "^3.11",
+    "phpmailer/phpmailer": "^6.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Model\\": "./models",
+      "MVC\\": "./",
+      "Controllers\\": "./controllers"
+    }
+  }
+}

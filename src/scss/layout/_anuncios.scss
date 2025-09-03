@@ -1,0 +1,61 @@
+@use 'sass:color';
+
+@include tablet{
+    .contenedor-anuncios{
+        @include grid(3, 2rem);
+    }
+}
+
+.anuncio{
+    background-color: color.adjust($gris, $lightness: 5%);
+    border: 1px solid color.adjust($gris, $lightness: 5%);
+    margin-bottom: 2rem;
+
+    .contenido-anuncio{
+        padding: 2rem;
+        height: auto;
+        .contenido-descripcion{
+             word-break: break-all; /* Es para que los textos largos no se salgan del contenedor */
+  display: -webkit-box; /* Es para que el texto se muestre en varias lineas */
+  -webkit-line-clamp: 3; /* Cantidad de lineas que se mostraran */
+  -webkit-box-orient: vertical; /* Es la posicion del texto */
+  overflow: hidden; /* Es para que se oculte el texto que se sale del contenedor */
+  
+        }
+         
+        
+    }
+
+
+
+
+    h1, p{
+        margin: 0;
+    }
+    
+}
+
+.precio{
+        color: $verde;
+        font-weight: $bold;
+        font-size: 3rem;
+    }
+
+.iconos-caracteristicas{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 40rem;
+    li{
+        flex: 1;
+        display: flex;
+
+        img{
+            flex: 0 0 5rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-weight: $black;
+        }
+    }
+}
