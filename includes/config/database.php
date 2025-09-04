@@ -5,7 +5,9 @@
 function conectarDB(): mysqli
 {
 
-    $db = new mysqli('localhost', 'root', 'root', 'bienesraices_crud');
+    $db = new mysqli('mysql-bienesraicesmario.alwaysdata.net', '428889 ', 'bienesraices12', 'bienesraicesmario_mvc');
+
+    $db->set_charset("utf8");
 
     if (!$db) {
         echo ('Error no se pudo conectar');

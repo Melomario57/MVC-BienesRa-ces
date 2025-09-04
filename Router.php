@@ -2,6 +2,7 @@
 
 namespace MVC;
 
+$currentUrl = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
 class Router
 {
     public $rutasGet = [];
