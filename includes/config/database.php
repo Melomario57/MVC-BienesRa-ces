@@ -7,7 +7,7 @@ function conectarDB(): mysqli
 
 
 
-    $db = new mysqli('mysql-bienesraicesmario.alwaysdata.net', 'bienesraicesmario', 'bienesraices12', 'bienesraicesmario_mvc');
+    $db = new mysqli('mysql-bienesraicesmario.alwaysdata.net', '428889', 'bienesraices12', 'bienesraicesmario_new ');
 
     $db->set_charset("utf8");
 
